@@ -5,4 +5,9 @@
     <string name="action_settings2">Settings2</string>
     <string name="action_settings3">Settings3</string>
     <string name="clicked">Item is clicked</string>
+    <string name="load_image">LOAD IMAGE</string>
+    <string name="image_request">IMAGE REQUEST</string>
+    <string name="get_string_json">GET String JSON</string>
+    <string name="post_string_json">POST String JSON</string>
+    <string name="custom_request">CUSTOM REQUEST</string>
 </resources>

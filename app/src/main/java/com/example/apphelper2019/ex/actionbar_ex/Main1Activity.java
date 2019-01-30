@@ -1,10 +1,12 @@
 package com.example.apphelper2019.ex.actionbar_ex;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -42,6 +44,8 @@ public class Main1Activity extends AppCompatActivity {
                 return true;
             case R.id.action_settings:
                 Toast.makeText(getApplicationContext(), getString(R.string.clicked), Toast.LENGTH_SHORT).show();
+//                Snackbar.make(view, getString(R.string.clicked), Snackbar.LENGTH_SHORT) //com.android.support:design:28.0.0
+//                        .setAction("No action", null).show();
                 break;
         }
 
