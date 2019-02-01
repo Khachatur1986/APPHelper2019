@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.apphelper2019.ex.actionbar_ex.Main1Activity;
+import com.example.apphelper2019.ex.certificate_ex.Main3Activity;
 import com.example.apphelper2019.ex.volley_ex.Main2Activity;
 import com.example.apphelper2019.utils.ExType;
 
@@ -54,6 +55,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 1:
                 intent = new Intent(getApplicationContext(), Main2Activity.class);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(getApplicationContext(), Main3Activity.class);
                 startActivity(intent);
                 break;
         }

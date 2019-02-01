@@ -1,8 +1,9 @@
 package com.example.apphelper2019.utils;
 
 public enum ExType {
-    ACTIONBAR_EX("ACTIONBAR_EX"),
-    VOLLEY_EX_ONE("VOLLEY_EX_ONE");
+    ACTIONBAR_EX("actionbar_ex"),
+    VOLLEY_EX_ONE("volley_ex_one"),
+    CERTIFICATE_EX("certificate_ex");
 
     private String typeName;
 
