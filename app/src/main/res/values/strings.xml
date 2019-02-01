@@ -10,4 +10,6 @@
     <string name="get_string_json">GET String JSON</string>
     <string name="post_string_json">POST String JSON</string>
     <string name="custom_request">CUSTOM REQUEST</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="register">REGISTER</string>
 </resources>
