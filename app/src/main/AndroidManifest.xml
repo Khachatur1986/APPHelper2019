@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".ex.login_reg_php_mysql.Main4Activity"></activity>
+        <activity android:name=".ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity"></activity>
+        <activity android:name=".ex.retrofit_2_ex.start.ui.Main5Activity" />
+        <activity android:name=".ex.retrofit_2_ex.LoginActivity" />
+        <activity android:name=".ex.retrofit_2_ex.Main5Activity" />
+        <activity android:name=".ex.login_reg_php_mysql.Main4Activity" />
         <activity android:name=".ex.certificate_ex.Main3Activity" />
         <activity android:name=".ex.volley_ex.RecyclerViewActivity" />
         <activity android:name=".ex.volley_ex.Main2Activity" />

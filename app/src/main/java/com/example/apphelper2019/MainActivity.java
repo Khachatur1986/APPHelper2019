@@ -8,11 +8,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.apphelper2019.ex.actionbar_ex.Main1Activity;
 import com.example.apphelper2019.ex.certificate_ex.Main3Activity;
 import com.example.apphelper2019.ex.login_reg_php_mysql.Main4Activity;
+import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity;
+import com.example.apphelper2019.ex.retrofit_2_ex.start.ui.Main5Activity;
 import com.example.apphelper2019.ex.volley_ex.Main2Activity;
 import com.example.apphelper2019.utils.ExType;
 
@@ -48,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent ;
-        switch (position){
+        Intent intent;
+        switch (position) {
             case 0:
                 intent = new Intent(getApplicationContext(), Main1Activity.class);
                 startActivity(intent);
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 3:
                 intent = new Intent(getApplicationContext(), Main4Activity.class);
+                startActivity(intent);
+                break;
+            case 4:
+                intent = new Intent(getApplicationContext(), Main5Activity.class);
+                startActivity(intent);
+                break;
+            case 5:
+                intent = new Intent(getApplicationContext(), Main6Activity.class);
                 startActivity(intent);
                 break;
         }
