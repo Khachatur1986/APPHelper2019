@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.apphelper2019.BuildConfig;
 import com.example.apphelper2019.R;
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.api.model.User;
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.api.service.UserService;
@@ -16,13 +17,16 @@ import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 
+import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+//https://www.javatpoint.com/ethical-hacking-meterpreter
 //https://www.youtube.com/watch?v=j7lRiTJ_-cI&index=2&list=PLpUMhvC6l7APq7y_FFfK-GEHvcUKqo6SC
 //http://qaru.site/questions/252106/use-jsonreadersetlenienttrue-to-accept-malformed-json-at-line-1-column-1-path
 //C:\Users\Khach\AndroidStudioProjects\helper_2018\RetrofitExample\app\src\main\java\example\am\retrofitexample
@@ -49,10 +53,55 @@ public class Main6Activity extends AppCompatActivity {
         });
     }
 
+//    private void sendNetworkRequest(User user) {
+//        Retrofit.Builder builder = new Retrofit.Builder()
+//                .baseUrl(Main6Activity.BASE_URL)
+//                .addConverterFactory(GsonConverterFactory.create());
+//
+//        Retrofit retrofit = builder.build();
+//
+//        UserService userService = retrofit.create(UserService.class);
+//
+//        Call<User> userCall = userService.createAccount(user.getUsername(), user.getPassword());
+//
+//        userCall.enqueue(new Callback<User>() {
+//            @Override
+//            public void onResponse(Call<User> call, Response<User> response) {
+//                User u = response.body();
+//                if (u != null) {
+//                    Snackbar.make(et_username, "" + u.getId(), Snackbar.LENGTH_LONG)
+//                            .setAction(null, null)
+//                            .show();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<User> call, Throwable t) {
+//                Snackbar.make(et_username, "" + t.getMessage(), Snackbar.LENGTH_LONG)
+//                        .setAction(null, null)
+//                        .show();
+//            }
+//        });
+//    }
+
+
+    //with OkHttpLogging interceptor example
     private void sendNetworkRequest(User user) {
+        OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder();
+
+
+        if (BuildConfig.DEBUG){
+            HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+            interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+            okHttpClientBuilder.addInterceptor(interceptor);
+        }
+
+        OkHttpClient client = okHttpClientBuilder.build();
+
         Retrofit.Builder builder = new Retrofit.Builder()
                 .baseUrl(Main6Activity.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create());
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(client);
 
         Retrofit retrofit = builder.build();
 
