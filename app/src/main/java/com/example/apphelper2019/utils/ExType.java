@@ -6,7 +6,9 @@ public enum ExType {
     CERTIFICATE_EX("certificate_ex"),
     LOGIN_REG_PHP_MYSQL("login reg php mysql"),
     RETROFIT_2_start("retrofit 2 start"),
-    RETROFIT_2_send_obj("send_obj_in_request_body");
+    RETROFIT_2_send_obj("send_obj_in_request_body"),
+    RETROFIT_2_upload_file("RETROFIT_2_upload_file"),
+    RETROFIT_2_upload_file2("RETROFIT_2_upload_file2");
 
     private String typeName;
 

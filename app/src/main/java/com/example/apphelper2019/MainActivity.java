@@ -14,6 +14,8 @@ import com.example.apphelper2019.ex.certificate_ex.Main3Activity;
 import com.example.apphelper2019.ex.login_reg_php_mysql.Main4Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.start.ui.Main5Activity;
+import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main8Activity;
+import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main7Activity;
 import com.example.apphelper2019.ex.volley_ex.Main2Activity;
 import com.example.apphelper2019.utils.ExType;
 
@@ -73,6 +75,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 5:
                 intent = new Intent(getApplicationContext(), Main6Activity.class);
+                startActivity(intent);
+                break;
+            case 6:
+                intent = new Intent(getApplicationContext(), Main7Activity.class);
+                startActivity(intent);
+                break;
+            case 7:
+                intent = new Intent(getApplicationContext(), Main8Activity.class);
                 startActivity(intent);
                 break;
         }

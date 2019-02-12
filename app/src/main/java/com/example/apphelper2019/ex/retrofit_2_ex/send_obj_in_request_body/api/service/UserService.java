@@ -2,7 +2,6 @@ package com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.api.
 
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.api.model.User;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
