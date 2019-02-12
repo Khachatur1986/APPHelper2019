@@ -4,7 +4,7 @@ public class Game {
     public Game(GameBuilder gameBuilder) {
     }
 
-    public void startGame(){
+    public void startGame() {
 
     }
 }

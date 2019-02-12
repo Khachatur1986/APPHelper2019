@@ -2,9 +2,9 @@ package com.example.apphelper2019.ex.volley_ex;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.support.v4.util.LruCache;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -37,13 +37,13 @@ import java.util.Map;
 
 /**
  * read this article https://www.journaldev.com/17198/android-volley-tutorial
- *
- *     <uses-permission android:name="android.permission.INTERNET"/>
- *
- *     implementation 'com.android.support:design:28.0.0'
- *     implementation 'com.android.volley:volley:1.1.1'
- *     implementation 'com.google.code.gson:gson:2.8.5'
- *     implementation 'com.android.support:recyclerview-v7:28.0.0'
+ * <p>
+ * <uses-permission android:name="android.permission.INTERNET"/>
+ * <p>
+ * implementation 'com.android.support:design:28.0.0'
+ * implementation 'com.android.volley:volley:1.1.1'
+ * implementation 'com.google.code.gson:gson:2.8.5'
+ * implementation 'com.android.support:recyclerview-v7:28.0.0'
  */
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
     Button btnGET, btnPOST, btnImageLoader, btnCustomRequest, btnImageRequest;

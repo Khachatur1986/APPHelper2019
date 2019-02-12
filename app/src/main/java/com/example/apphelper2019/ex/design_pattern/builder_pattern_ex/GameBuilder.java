@@ -6,18 +6,19 @@ public class GameBuilder {
     private String homeTeam;
     private Date startDate;
 
-    public GameBuilder homeTeam(String name){
+    public GameBuilder homeTeam(String name) {
         homeTeam = name;
         return this;
     }
-    public GameBuilder startDate(){
+
+    public GameBuilder startDate() {
         startDate = new Date();
         return this;
     }
 
     public Game build() {
-        if (homeTeam == null){
-            throw  new IllegalStateException("Missing home team");
+        if (homeTeam == null) {
+            throw new IllegalStateException("Missing home team");
         }
         return new Game(this);
     }

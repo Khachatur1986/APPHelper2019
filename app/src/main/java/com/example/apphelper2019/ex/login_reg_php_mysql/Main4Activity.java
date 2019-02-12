@@ -2,8 +2,8 @@ package com.example.apphelper2019.ex.login_reg_php_mysql;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -84,13 +84,14 @@ public class Main4Activity extends AppCompatActivity {
         });
 
     }
+
     //https://inducesmile.com/android-programming/how-to-close-or-hide-soft-keyboard-in-android/
-    public void closeKeyboard(View v){
+    public void closeKeyboard(View v) {
         try {
-            InputMethodManager editTextInput = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            InputMethodManager editTextInput = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             editTextInput.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-        }catch (Exception e){
-            Log.e("AndroidView", "closeKeyboard: "+e);
+        } catch (Exception e) {
+            Log.e("AndroidView", "closeKeyboard: " + e);
         }
     }
 

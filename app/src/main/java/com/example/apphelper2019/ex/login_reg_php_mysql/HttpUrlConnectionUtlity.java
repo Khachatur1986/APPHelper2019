@@ -26,10 +26,12 @@ import java.util.Map;
  */
 public class HttpUrlConnectionUtlity extends AsyncTask<Integer, Void, String> {
 
-    interface MyCalBack{
+    interface MyCalBack {
         void onSuccess(String response);
+
         void onError(String errorMessage);
     }
+
     private static final String TAG = "HttpUrlConnectionUtlity";
     Context mContext;
     public static final int GET_METHOD = 0,

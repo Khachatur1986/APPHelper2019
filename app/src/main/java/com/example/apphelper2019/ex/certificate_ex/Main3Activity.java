@@ -1,8 +1,8 @@
 package com.example.apphelper2019.ex.certificate_ex;
 
 import android.content.res.AssetManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.example.apphelper2019.R;

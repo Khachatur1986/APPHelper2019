@@ -1,46 +1,30 @@
 package com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui;
 
 import android.Manifest;
-import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
-import android.provider.DocumentsContract;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.CursorLoader;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.apphelper2019.R;
-import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.api.service.UserService;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.api.model.MyResponse;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.api.service.Api;
-import com.example.apphelper2019.utils.FileUtil;
-import com.example.apphelper2019.utils.RealPathUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 
 import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
