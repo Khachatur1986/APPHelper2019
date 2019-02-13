@@ -9,7 +9,8 @@ public enum ExType {
     RETROFIT_2_send_obj("send_obj_in_request_body"),
     RETROFIT_2_upload_file("RETROFIT_2_upload_file"),
     RETROFIT_2_upload_file2("RETROFIT_2_upload_file2"),
-    DB_TODO_EX("DB_SQLITE_OPEN_HELPER_TODO_EX");
+    DB_TODO_EX("DB_SQLITE_OPEN_HELPER_TODO_EX"),
+    OBSERVER_OBSERVABLE("OBSERVER_OBSERVABLE");
 
     private String typeName;
 

@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ex.db_ex.todo_ex.Main9Activity"></activity>
+        <activity android:name=".ex.observer_observable_ex.Main10Activity"></activity>
+        <activity android:name=".ex.db_ex.todo_ex.Main9Activity" />
         <activity android:name=".ex.retrofit_2_ex.upload_file.ui.Main8Activity" />
         <activity android:name=".ex.retrofit_2_ex.upload_file.ui.Main7Activity" />
         <activity android:name=".ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity" />

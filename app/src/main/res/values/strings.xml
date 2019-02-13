@@ -12,4 +12,9 @@
     <string name="custom_request">CUSTOM REQUEST</string>
     <string name="create_account">CREATE ACCOUNT</string>
     <string name="register">REGISTER</string>
+
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="three">Three</string>
+    <string name="count">count:</string>
 </resources>
