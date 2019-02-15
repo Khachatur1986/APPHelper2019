@@ -11,7 +11,10 @@ import android.widget.ListView;
 
 import com.example.apphelper2019.ex.actionbar_ex.Main1Activity;
 import com.example.apphelper2019.ex.certificate_ex.Main3Activity;
+import com.example.apphelper2019.ex.content_provider_ex1.contact_provider.Main11Activity;
+import com.example.apphelper2019.ex.content_provider_ex1.content_resolver.Main12Activity;
 import com.example.apphelper2019.ex.db_ex.todo_ex.Main9Activity;
+import com.example.apphelper2019.ex.dialogs.Main13Activity;
 import com.example.apphelper2019.ex.login_reg_php_mysql.Main4Activity;
 import com.example.apphelper2019.ex.observer_observable_ex.Main10Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity;
@@ -93,6 +96,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 9:
                 intent = new Intent(getApplicationContext(), Main10Activity.class);
+                startActivity(intent);
+                break;
+            case 10:
+                intent = new Intent(getApplicationContext(), Main11Activity.class);
+                startActivity(intent);
+                break;
+            case 11:
+                intent = new Intent(getApplicationContext(), Main12Activity.class);
+                startActivity(intent);
+                break;
+            case 12:
+                intent = new Intent(getApplicationContext(), Main13Activity.class);
                 startActivity(intent);
                 break;
         }

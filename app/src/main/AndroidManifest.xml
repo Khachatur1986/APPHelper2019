@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ex.observer_observable_ex.Main10Activity"></activity>
+        <activity android:name=".ex.dialogs.Main13Activity"></activity>
+        <activity android:name=".ex.content_provider_ex1.content_resolver.Main12Activity" />
+        <activity android:name=".ex.observer_observable_ex.Main10Activity" />
         <activity android:name=".ex.db_ex.todo_ex.Main9Activity" />
         <activity android:name=".ex.retrofit_2_ex.upload_file.ui.Main8Activity" />
         <activity android:name=".ex.retrofit_2_ex.upload_file.ui.Main7Activity" />
@@ -32,6 +35,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ex.actionbar_ex.Main1Activity" />
+
+        <provider
+            android:name=".ex.content_provider_ex1.contact_provider.myprovider.MyContactProvider"
+            android:authorities="hello.world" />
     </application>
 
 </manifest>

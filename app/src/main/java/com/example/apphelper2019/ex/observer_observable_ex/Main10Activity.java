@@ -1,7 +1,7 @@
 package com.example.apphelper2019.ex.observer_observable_ex;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 

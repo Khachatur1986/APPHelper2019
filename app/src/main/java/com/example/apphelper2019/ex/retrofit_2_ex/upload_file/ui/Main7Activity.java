@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.CursorLoader;
 import android.support.v7.app.AppCompatActivity;
@@ -37,10 +38,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Main7Activity extends AppCompatActivity {
 //    private static final String BASE_URL = "http://192.168.0.111/android_apis/login_reg_api/api/service/";
 
-//    private EditText etInputDescription;
+    //    private EditText etInputDescription;
 //    private Button btn_uploadFile;
 //    private final int PICK_IMAGE_FROM_GALLERY_REQUEST_CODE = 1;
-//    private final int MY_PERMISSION_REQUEST = 100;
+    private final int MY_PERMISSION_REQUEST = 100;
 //    private MyOnclickListener myOnclickListener;
 
     private Button btn_upload_image;
@@ -69,6 +70,20 @@ public class Main7Activity extends AppCompatActivity {
                 startActivityForResult(i, 100);
             }
         });
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSION_REQUEST:
+                //if request is cancelled, the result arrays are empty
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    //permission was granted
+                } else {
+                    //permission denied
+                }
+                break;
+        }
     }
 
     @Override

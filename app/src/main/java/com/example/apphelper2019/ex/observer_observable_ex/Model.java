@@ -25,7 +25,7 @@ public class Model extends Observable {
         return list.get(index);
     }
 
-    public void setInitialData(){
+    public void setInitialData() {
         setChanged();
         notifyObservers();
     }
