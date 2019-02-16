@@ -68,7 +68,7 @@ public class MyContactProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        Log.d(TAG, "MyContactProvider onCreate");
+//        Log.d(TAG, "MyContactProvider onCreate");
         dbHelper = new DBHelper(getContext());
         return true;
     }

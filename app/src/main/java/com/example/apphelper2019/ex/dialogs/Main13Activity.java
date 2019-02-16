@@ -4,10 +4,9 @@ import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -84,6 +83,7 @@ public class Main13Activity extends AppCompatActivity implements View.OnClickLis
 
         dialogFragment.show(getSupportFragmentManager(), "alert");
     }
+
     private void showFragmentDialog(String tag) {
         MyDialogFragment dialogFragment = new MyDialogFragment();
 

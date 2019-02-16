@@ -11,16 +11,19 @@ import android.widget.ListView;
 
 import com.example.apphelper2019.ex.actionbar_ex.Main1Activity;
 import com.example.apphelper2019.ex.certificate_ex.Main3Activity;
-import com.example.apphelper2019.ex.content_provider_ex1.contact_provider.Main11Activity;
 import com.example.apphelper2019.ex.content_provider_ex1.content_resolver.Main12Activity;
 import com.example.apphelper2019.ex.db_ex.todo_ex.Main9Activity;
 import com.example.apphelper2019.ex.dialogs.Main13Activity;
 import com.example.apphelper2019.ex.login_reg_php_mysql.Main4Activity;
+import com.example.apphelper2019.ex.material_design.context_menu_ex.Main14Activity;
+import com.example.apphelper2019.ex.material_design.menu_ex.Main11Activity;
 import com.example.apphelper2019.ex.observer_observable_ex.Main10Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.start.ui.Main5Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main7Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main8Activity;
+import com.example.apphelper2019.ex.service_ex.intent_service.Main16Activity;
+import com.example.apphelper2019.ex.service_ex.service.Main15Activity;
 import com.example.apphelper2019.ex.volley_ex.Main2Activity;
 import com.example.apphelper2019.utils.ExType;
 
@@ -108,6 +111,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 12:
                 intent = new Intent(getApplicationContext(), Main13Activity.class);
+                startActivity(intent);
+                break;
+            case 13:
+                intent = new Intent(getApplicationContext(), Main14Activity.class);
+                startActivity(intent);
+                break;
+            case 14:
+                intent = new Intent(getApplicationContext(), Main15Activity.class);
+                startActivity(intent);
+                break;
+            case 15:
+                intent = new Intent(getApplicationContext(), Main16Activity.class);
                 startActivity(intent);
                 break;
         }

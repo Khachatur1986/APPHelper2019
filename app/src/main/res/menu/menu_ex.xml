@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_settings"
+        android:title="Settings"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_profile"
+        android:title="Profile"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_test"
+        android:title="Test"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_error_black_24dp"/>
+</menu>

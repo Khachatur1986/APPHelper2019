@@ -15,7 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ex.dialogs.Main13Activity"></activity>
+        <activity android:name=".ex.service_ex.intent_service.Main16Activity"></activity>
+
+        <service
+            android:name=".ex.service_ex.intent_service.MyIntentService"
+            android:exported="false" />
+
+        <activity android:name=".ex.service_ex.service.Main15Activity" />
+
+        <service
+            android:name=".ex.service_ex.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ex.material_design.context_menu_ex.Main14Activity" />
+        <activity android:name=".ex.material_design.menu_ex.Main11Activity" />
+        <activity android:name=".ex.dialogs.Main13Activity" />
         <activity android:name=".ex.content_provider_ex1.content_resolver.Main12Activity" />
         <activity android:name=".ex.observer_observable_ex.Main10Activity" />
         <activity android:name=".ex.db_ex.todo_ex.Main9Activity" />
