@@ -85,16 +85,6 @@ public class Main4Activity extends AppCompatActivity {
 
     }
 
-    //https://inducesmile.com/android-programming/how-to-close-or-hide-soft-keyboard-in-android/
-    public void closeKeyboard(View v) {
-        try {
-            InputMethodManager editTextInput = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            editTextInput.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-        } catch (Exception e) {
-            Log.e("AndroidView", "closeKeyboard: " + e);
-        }
-    }
-
     //    void usage() {
 //        HttpUrlConnectionUtlity httpMethod = new HttpUrlConnectionUtlity(getApplicationContext(), new HttpUrlConnectionUtlity.MyCalBack() {
 //            @Override
