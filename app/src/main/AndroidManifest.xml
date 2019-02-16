@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ex.service_ex.intent_service.Main16Activity"></activity>
+        <activity android:name=".ex.broadcast_receiver.Main17Activity"></activity>
+        <activity android:name=".ex.service_ex.intent_service.Main16Activity" />
 
         <service
             android:name=".ex.service_ex.intent_service.MyIntentService"

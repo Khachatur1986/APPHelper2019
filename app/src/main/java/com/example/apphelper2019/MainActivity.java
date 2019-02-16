@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.apphelper2019.ex.actionbar_ex.Main1Activity;
+import com.example.apphelper2019.ex.broadcast_receiver.Main17Activity;
 import com.example.apphelper2019.ex.certificate_ex.Main3Activity;
 import com.example.apphelper2019.ex.content_provider_ex1.content_resolver.Main12Activity;
 import com.example.apphelper2019.ex.db_ex.todo_ex.Main9Activity;
@@ -123,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 15:
                 intent = new Intent(getApplicationContext(), Main16Activity.class);
+                startActivity(intent);
+                break;
+            case 16:
+                intent = new Intent(getApplicationContext(), Main17Activity.class);
                 startActivity(intent);
                 break;
         }
