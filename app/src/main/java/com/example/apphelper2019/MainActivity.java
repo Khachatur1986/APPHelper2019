@@ -23,6 +23,7 @@ import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.ui.Ma
 import com.example.apphelper2019.ex.retrofit_2_ex.start.ui.Main5Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main7Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main8Activity;
+import com.example.apphelper2019.ex.runtime_permission.Main20Activity;
 import com.example.apphelper2019.ex.service_ex.intent_service.Main16Activity;
 import com.example.apphelper2019.ex.service_ex.service.Main15Activity;
 import com.example.apphelper2019.ex.storage.external.Main19Activity;
@@ -138,6 +139,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 18:
                 intent = new Intent(getApplicationContext(), Main19Activity.class);
+                startActivity(intent);
+                break;
+            case 19:
+                intent = new Intent(getApplicationContext(), Main20Activity.class);
                 startActivity(intent);
                 break;
         }

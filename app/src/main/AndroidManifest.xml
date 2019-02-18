@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ex.storage.external.Main19Activity"></activity>
+        <activity android:name=".ex.runtime_permission.Main20Activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ex.storage.external.Main19Activity" />
         <activity android:name=".ex.storage.internal.Main18Activity" />
         <activity android:name=".ex.broadcast_receiver.Main17Activity" />
         <activity android:name=".ex.service_ex.intent_service.Main16Activity" />
