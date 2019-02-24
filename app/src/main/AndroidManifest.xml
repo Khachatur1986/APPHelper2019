@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.apphelper2019">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -17,8 +18,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ex.runtime_permission.Main20Activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ex.looper_handler.Main28Activity" />
+        <activity android:name=".ex.view_design.recycleview.Main26Activity" />
+        <activity android:name=".ex.notification.notification_chanel.Main25Activity" />
+
+        <receiver
+            android:name=".ex.notification.custom_notification.ButtonClickedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="button_clicked" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ex.notification.custom_notification.Main24Activity" />
+        <activity android:name=".ex.view_design.recycle_and_card_view_ex.Main23Activity" />
+        <activity android:name=".ex.sensors.Main22Activity" />
+        <activity android:name=".ex.view_design.state_list_drawable.Main21Activity" />
+        <activity
+            android:name=".ex.runtime_permission.Main20Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ex.storage.external.Main19Activity" />
         <activity android:name=".ex.storage.internal.Main18Activity" />
         <activity android:name=".ex.broadcast_receiver.Main17Activity" />

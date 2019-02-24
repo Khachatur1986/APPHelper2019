@@ -16,18 +16,26 @@ import com.example.apphelper2019.ex.content_provider_ex1.content_resolver.Main12
 import com.example.apphelper2019.ex.db_ex.todo_ex.Main9Activity;
 import com.example.apphelper2019.ex.dialogs.Main13Activity;
 import com.example.apphelper2019.ex.login_reg_php_mysql.Main4Activity;
+import com.example.apphelper2019.ex.looper_handler.Main28Activity;
 import com.example.apphelper2019.ex.material_design.context_menu_ex.Main14Activity;
 import com.example.apphelper2019.ex.material_design.menu_ex.Main11Activity;
+import com.example.apphelper2019.ex.notification.custom_notification.Main24Activity;
+import com.example.apphelper2019.ex.notification.notification_chanel.Main25Activity;
 import com.example.apphelper2019.ex.observer_observable_ex.Main10Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.send_obj_in_request_body.ui.Main6Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.start.ui.Main5Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main7Activity;
 import com.example.apphelper2019.ex.retrofit_2_ex.upload_file.ui.Main8Activity;
 import com.example.apphelper2019.ex.runtime_permission.Main20Activity;
+import com.example.apphelper2019.ex.sensors.Main22Activity;
 import com.example.apphelper2019.ex.service_ex.intent_service.Main16Activity;
 import com.example.apphelper2019.ex.service_ex.service.Main15Activity;
 import com.example.apphelper2019.ex.storage.external.Main19Activity;
 import com.example.apphelper2019.ex.storage.internal.Main18Activity;
+import com.example.apphelper2019.ex.view_design.recycle_and_card_view.Main27Activity;
+import com.example.apphelper2019.ex.view_design.recycle_and_card_view_ex.Main23Activity;
+import com.example.apphelper2019.ex.view_design.recycleview.Main26Activity;
+import com.example.apphelper2019.ex.view_design.state_list_drawable.Main21Activity;
 import com.example.apphelper2019.ex.volley_ex.Main2Activity;
 import com.example.apphelper2019.utils.ExType;
 
@@ -143,6 +151,38 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 19:
                 intent = new Intent(getApplicationContext(), Main20Activity.class);
+                startActivity(intent);
+                break;
+            case 20:
+                intent = new Intent(getApplicationContext(), Main21Activity.class);
+                startActivity(intent);
+                break;
+            case 21:
+                intent = new Intent(getApplicationContext(), Main22Activity.class);
+                startActivity(intent);
+                break;
+            case 22:
+                intent = new Intent(getApplicationContext(), Main23Activity.class);
+                startActivity(intent);
+                break;
+            case 23:
+                intent = new Intent(getApplicationContext(), Main24Activity.class);
+                startActivity(intent);
+                break;
+            case 24:
+                intent = new Intent(getApplicationContext(), Main25Activity.class);
+                startActivity(intent);
+                break;
+            case 25:
+                intent = new Intent(getApplicationContext(), Main26Activity.class);
+                startActivity(intent);
+                break;
+            case 26:
+                intent = new Intent(getApplicationContext(), Main27Activity.class);
+                startActivity(intent);
+                break;
+            case 27:
+                intent = new Intent(getApplicationContext(), Main28Activity.class);
                 startActivity(intent);
                 break;
         }

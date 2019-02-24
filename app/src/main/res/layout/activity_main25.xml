@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ex.notification.notification_chanel.Main25Activity">
+
+    <EditText
+        android:id="@+id/et_notification_channel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/et_notification_channel_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_notification_channel_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send on channel 1" />
+
+        <Button
+            android:id="@+id/btn_notification_channel_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send on channel 2" />
+    </LinearLayout>
+</LinearLayout>
